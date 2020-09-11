@@ -1,0 +1,8 @@
+2.    Создайте базу данных example, разместите в ней таблицу users, состоящую из двух столбцов, числового id и строкового name.
+  * CREATE database example;  -Создайте базу данных example
+  * USE example; - Перешли в БД
+  * CREATE TABLE users (id INT(11), name varchar(68));  -разместите в ней таблицу users
+  
+3.    Создайте дамп базы данных example из предыдущего задания, разверните содержимое дампа в новую базу данных sample.
+  * C:\xampp\mysql\bin>mysqldump -u root -p example > sampledump.sql
+  * C:\xampp\mysql\bin>mysqldump -u root -p sample < sampledump.sql
